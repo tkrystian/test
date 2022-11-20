@@ -5,6 +5,7 @@ public class Main {
         Tree tree = new Tree();
         tree.add(5);
         tree.add(8);
+        tree.add(1);
         tree.add(4);
         tree.add(19);
         tree.add(1);

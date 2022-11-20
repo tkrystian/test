@@ -67,7 +67,7 @@ public class Tree {
         }
         if(value == node.getValue()){
             return true;
-        }else if(value > node.getRight().getValue()){
+        }else if(value > node.getValue()){
             return findValue(value, node.getRight());
         }else return findValue(value, node.getLeft());
     }

@@ -1,5 +1,6 @@
 package pl.camp.it;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Kucharz {
@@ -9,6 +10,7 @@ public class Kucharz {
         int p;
         int z;
         Scanner scanner = new Scanner(System.in);
+        try{
         System.out.println("Podaj ilosc jablek: ");
         j = scanner.nextInt();
         System.out.println("Podaj ilosc pomaranczy: ");
@@ -17,6 +19,10 @@ public class Kucharz {
         z = scanner.nextInt();
         System.out.println(Oblicz(j,p,z));
         scanner.close();
+        } catch (InputMismatchException e){
+            System.out.println("wpisano niepoprawne dane");
+        }
+
     }
 
     public static int Oblicz(int j, int p, int z){

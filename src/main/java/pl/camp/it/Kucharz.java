@@ -11,14 +11,14 @@ public class Kucharz {
         int z;
         Scanner scanner = new Scanner(System.in);
         try{
-        System.out.println("Podaj ilosc jablek: ");
-        j = scanner.nextInt();
-        System.out.println("Podaj ilosc pomaranczy: ");
-        p = scanner.nextInt();
-        System.out.println("Podaj ilosc monet: ");
-        z = scanner.nextInt();
-        System.out.println(Oblicz(j,p,z));
-        scanner.close();
+            System.out.println("Podaj ilosc jablek: ");
+            j = scanner.nextInt();
+            System.out.println("Podaj ilosc pomaranczy: ");
+            p = scanner.nextInt();
+            System.out.println("Podaj ilosc monet: ");
+            z = scanner.nextInt();
+            System.out.println(Oblicz(j,p,z));
+            scanner.close();
         } catch (InputMismatchException e){
             System.out.println("wpisano niepoprawne dane");
         }

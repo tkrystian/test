@@ -1,11 +1,22 @@
 package pl.camp.it;
 
+import java.util.Scanner;
+
 public class Kucharz {
 
     public static void main(String[] args) {
-        System.out.println(Oblicz(1,3,1));
-        System.out.println(Oblicz(5,3,3));
-        System.out.println(Oblicz(1,10,20));
+        int j;
+        int p;
+        int z;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Podaj ilosc jablek: ");
+        j = scanner.nextInt();
+        System.out.println("Podaj ilosc pomaranczy: ");
+        p = scanner.nextInt();
+        System.out.println("Podaj ilosc monet: ");
+        z = scanner.nextInt();
+        System.out.println(Oblicz(j,p,z));
+        scanner.close();
     }
 
     public static int Oblicz(int j, int p, int z){

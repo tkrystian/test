@@ -6,7 +6,7 @@ public class Tree {
 
     public void add(int value){
         if(this.root == null){
-            root = new Node();
+            this.root = new Node();
             this.root.setValue(value);
         }else {
             addValue(value, this.root);
